@@ -1,0 +1,110 @@
+/* Reset styles */
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    scroll-behavior: smooth;
+    user-select: none;
+    overflow: hidden;
+}
+
+html {
+    background-color: #FFFFFF;
+}
+
+.btn-wrapper {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.btn {
+    background-color: #fff6df;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border: 2px solid #000;
+    transition: all .1s ease-in-out;
+}
+
+.wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0px 32px 32px 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper .tasks {
+    width: 300px;
+    background-color: #FFDBA4;
+    padding: 30px;
+    border-radius: 24px;
+    margin-right: 32px;
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.wrapper .tasks:last-child {
+    margin-right: 0;
+}
+
+.wrapper .tasks h2 {
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.wrapper .tasks a {
+    width: fit-content;
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.wrapper .tasks a input {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.active {
+    text-decoration: line-through !important;
+}
+
+.wrapper .tasks a:last-child {
+    margin-bottom: 0;
+}
+
+.error {
+    width: 300px;
+    background-color: #fc0e0e;
+    padding: 30px;
+    border-radius: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 32px;
+}
